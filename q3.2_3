@@ -1,0 +1,14 @@
+var A >=0;
+var B >=0;
+
+
+maximize obj: 0.9 * A + 8 / 9 * B;
+
+c1:A <= 10000;
+c2:B <= 9000;
+c3:A / 10000 * 400 + B / 9000 * 500 <= 600;
+c4:A + B <= 12000;
+solve;
+display A;
+display B;
+end;
